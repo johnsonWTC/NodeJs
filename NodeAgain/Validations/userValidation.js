@@ -7,4 +7,4 @@ const userModel = yup.object({
     Password: yup.string().min(3).max(10).required()
 });
 
-module.exports = userModel; 
+module.exports = userModel;

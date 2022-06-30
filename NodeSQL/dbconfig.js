@@ -1,14 +1,14 @@
 const config = {
-    user: 'jdubula@iqbusiness.net',
-    Password: 'Jamgod12345!!!!!',
-    server: '127.0.0.1',
-    database: 'APPSix',
+    user: "adminn",
+    password: "1234",
+    server: "ASSET-10422",
+    database: "APPSix",
     options: {
         trustedconnection: true,
-        enableArithAort: true,
-        instancename: 'SQLEXPRESS'
+        enableArithAbort: true,
+        instancename: "",
     },
-    Port: 1433
-}
+    port: 49679
+};
 
 module.exports = config;
