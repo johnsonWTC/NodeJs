@@ -1,37 +1,22 @@
-const { json } = require("express");
 const express = require("express");
 const app = express();
+app.use(express.json())
+const userRoutes = require("./Routes/user")
+const userModel = require("./Model/user");
+const middleware = require("./middleware/validationMiddleWare")
+console.log("started")
+app.use('/user', userRoutes);
 
-
-
-app.get("/", (req, res) => {
-    console.log("hey this is the index");
+app.post("/test", middleware(userModel), (req, res) => {
+    //  console.log("hey this is the index we are using middleware");
     res.send("hey this is the index")
 })
 
-app.get("/users", (req, res) => {
-    console.log("getting users")
-    res.send("app users")
-})
 
-app.post("/users/create", (req, res) => {
-    console.log("Adding users")
-    res.send("adding new user")
-})
-
-
-app.patch("/users/edit", (req, res) => {
-    console.log("editing user")
-    res.send("editing user")
-})
-
-
-app.get("/users/delete", (req, res) => {
-    console.log("deleting users")
-    res.send("deleting users")
-})
-
-
+// app.get("/", (req, res) => {
+//     console.log("hey this is the index");
+//     res.send("hey this is the index")
+// })
 
 
 app.listen("3500");

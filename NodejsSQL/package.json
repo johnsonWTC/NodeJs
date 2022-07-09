@@ -3,11 +3,17 @@
   "version": "0.0.0",
   "description": "NodejsSQL",
   "main": "app.js",
+  "scripts": {
+    "DevStart": "Nodemon app.js"
+  },
   "author": {
     "name": ""
   },
   "dependencies": {
     "express": "^4.18.1",
     "mssql": "^8.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }

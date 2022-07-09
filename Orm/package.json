@@ -1,0 +1,21 @@
+{
+    "name": "Orm",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "DevStart": "Nodemon app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.1",
+        "mssql": "^8.1.2",
+        "sequelize": "^6.21.2",
+        "yup": "^0.32.11"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.18"
+    }
+}
