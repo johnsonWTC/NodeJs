@@ -11,16 +11,17 @@ namespace BigPharma.Models
     {
         protected readonly IConfiguration Configuration;
 
-        public DataContext(DbContextOptions<DataContext> options): base(options)
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-          
+
         }
-        //protected override void OnConfiguring(DbContextOptionsBuilder options)
-        //{
-        //    // connect to sql server with connection string from app settings
-        //    options.UseSqlServer(Configuration.GetConnectionString("NewDb"));
-        //}
+
 
         public DbSet<User> Users { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<RoleFeatures> RoleFeatures { get; set; }
+        public DbSet<Features> Features { get; set; }
+
     }
-    }
+}

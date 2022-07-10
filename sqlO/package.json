@@ -1,19 +1,20 @@
 {
-  "name": "sqlO",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.1",
-    "tedious": "^14.7.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.19"
-  }
+    "name": "sqlO",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "Devstart": "nodemon run app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.1",
+        "sequelize": "^6.21.2",
+        "tedious": "^14.7.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.19"
+    }
 }
